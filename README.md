@@ -1,11 +1,8 @@
 # Ex-08-Data-Visualization:
-
 # AIM:
 To Perform Data Visualization on a complex dataset and save the data to a file. 
-
 # EXPLANATION:
 Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.
-
 # ALGORITHM:
 ## STEP 1:
 Read the given Data.
@@ -15,8 +12,6 @@ Clean the Data Set using Data Cleaning Process.
 Apply Feature generation and selection techniques to all the features of the data set.
 ## STEP 4:
 Apply data visualization techniques to identify the patterns of the data.
-
-
 # CODE:
 ```
 DEVELOPED BY   : Sham Rathan S   
@@ -70,7 +65,6 @@ sns.pointplot(x=df["Quantity"],y=df["Discount"])
 sns.countplot(x="Category",data=df)
 sns.countplot(x="Sub-Category",data=df)
 ```
-
 ### 7.Histogram:
 ```
 sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
@@ -80,7 +74,6 @@ sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 sns.kdeplot(x="Profit", data = df,hue='Category')
 ```
 ### Data Visualization Using MatPlotlib:
-
 ### 1.Plot:
 ```
 plt.plot(df['Category'], df['Sales'])
@@ -102,7 +95,6 @@ colors=sns.color_palette("bright")
 plt.pie(df1["Sales"],labels=labels,autopct="%0.0f%%")
 plt.show()
 ```
-
 ```
 df3=df.groupby(by=["Category"]).sum()
 labels=[]
@@ -133,8 +125,6 @@ plt.show()
 plt.boxplot(x="Sales",data=df)
 plt.show()
 ```
-
-
 # OUPUT:
 # Read the Dataframe:
 ![OUTPUT](./images/1.jpg)
@@ -173,7 +163,6 @@ plt.show()
 ![OUTPUT](./images/16.jpg)
 ## BoxPlot(Sales):
 ![OUTPUT](./images/17.jpg)
-
 # RESULT:
 Hence, Data Visualization is applied on the complex dataset using libraries like Seaborn and Matplotlib successfully and the data is saved to file.
 
